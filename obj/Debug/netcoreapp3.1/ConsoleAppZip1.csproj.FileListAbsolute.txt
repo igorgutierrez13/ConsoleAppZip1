@@ -1,0 +1,13 @@
+C:\Users\55129\source\repos\ConsoleAppZip1\bin\Debug\netcoreapp3.1\ConsoleAppZip1.exe
+C:\Users\55129\source\repos\ConsoleAppZip1\bin\Debug\netcoreapp3.1\ConsoleAppZip1.deps.json
+C:\Users\55129\source\repos\ConsoleAppZip1\bin\Debug\netcoreapp3.1\ConsoleAppZip1.runtimeconfig.json
+C:\Users\55129\source\repos\ConsoleAppZip1\bin\Debug\netcoreapp3.1\ConsoleAppZip1.runtimeconfig.dev.json
+C:\Users\55129\source\repos\ConsoleAppZip1\bin\Debug\netcoreapp3.1\ConsoleAppZip1.dll
+C:\Users\55129\source\repos\ConsoleAppZip1\bin\Debug\netcoreapp3.1\ConsoleAppZip1.pdb
+C:\Users\55129\source\repos\ConsoleAppZip1\bin\Debug\netcoreapp3.1\Ionic.Zip.dll
+C:\Users\55129\source\repos\ConsoleAppZip1\obj\Debug\netcoreapp3.1\ConsoleAppZip1.csprojAssemblyReference.cache
+C:\Users\55129\source\repos\ConsoleAppZip1\obj\Debug\netcoreapp3.1\ConsoleAppZip1.AssemblyInfoInputs.cache
+C:\Users\55129\source\repos\ConsoleAppZip1\obj\Debug\netcoreapp3.1\ConsoleAppZip1.AssemblyInfo.cs
+C:\Users\55129\source\repos\ConsoleAppZip1\obj\Debug\netcoreapp3.1\ConsoleAppZip1.csproj.CopyComplete
+C:\Users\55129\source\repos\ConsoleAppZip1\obj\Debug\netcoreapp3.1\ConsoleAppZip1.dll
+C:\Users\55129\source\repos\ConsoleAppZip1\obj\Debug\netcoreapp3.1\ConsoleAppZip1.pdb
