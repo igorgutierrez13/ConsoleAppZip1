@@ -5,15 +5,30 @@ using System.Linq;
 using System.Text;
 using Ionic.Zip;
 using Ionic.Zlib;
+using System.Threading;
+
 namespace ConsoleAppZip1
 {
     class Program
     {
         #region Static properties
-        private static string currentPassword = string.Empty;
-        private static int currentPWLenght = 0;
+        private static string currentPassword = "!aaa";
+        private static int currentPWLenght = 4; //Igor - Alterado aqui para começar do 4 length.
         private static bool verboseOutput = false;
         private static bool silent = false;
+        public static string file, outDir = string.Empty;
+        #endregion
+
+        #region Threading
+        public static void ChamarThread()
+        {
+            ThreadStart ts = new ThreadStart(CrackPassword);
+            Thread t = new Thread(ts);
+            t.IsBackground = false;
+            t.Start();
+        }
+
+
         #endregion
 
         #region Main
@@ -47,20 +62,20 @@ namespace ConsoleAppZip1
                 }
             }
 
-            string file = args[args.Length - 2];
-            string outDir = args[args.Length - 1];
+            file = args[args.Length - 2];
+            outDir = args[args.Length - 1];
             if (verboseOutput)
             {
                 Console.WriteLine("Input file is {0}.", file);
                 Console.WriteLine("Output dir is {0}.", outDir);
             }
 
-            CrackPassword(file, outDir);
+            ChamarThread();
         }
         #endregion
 
         #region Static methods
-        private static void CrackPassword(string file, string outDir)
+        private static void CrackPassword()
         {
             if (!ZipFile.IsZipFile(file))
             {
