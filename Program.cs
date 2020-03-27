@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -23,7 +22,8 @@ namespace ConsoleAppZip1
         public static void ChamarThread()
         {
             ThreadStart ts = new ThreadStart(CrackPassword);
-            Thread t = new Thread(ts);
+            Thread thread = new Thread(ts);
+            Thread t = thread;
             t.IsBackground = false;
             t.Start();
         }
@@ -42,6 +42,7 @@ namespace ConsoleAppZip1
                 Console.WriteLine("Options");
                 Console.WriteLine("  -v\t\tVerbose console ouput.");
                 Console.WriteLine("  -s\t\tSilent. No console output.");
+                Console.WriteLine("  -l\t\tLength of password.");
                 Console.WriteLine("  Default\tSome console output.");
                 return;
             }
@@ -54,6 +55,8 @@ namespace ConsoleAppZip1
                         verboseOutput = true;
                     else if (args[i] == "-s")
                         silent = true;
+                    else if (args[i] == "-l")//Igor - Alterado aqui para começar do 4 length.
+                        currentPWLenght = int.Parse(args[i + 1].Trim());//Igor - Alterado aqui para começar do 4 length.
                     else
                     {
                         Console.WriteLine("Error: unknown option '{0}'", args[i]);
