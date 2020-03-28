@@ -11,8 +11,8 @@ namespace ConsoleAppZip1
     class Program
     {
         #region Static properties
-        private static string currentPassword = "!aaa";
-        private static int currentPWLenght = 4; //Igor - Alterado aqui para começar do 4 length.
+        private static string currentPassword = "Paz042!!!!!";
+        private static int currentPWLenght = 11; //Igor - Alterado aqui para começar do 4 length.
         private static bool verboseOutput = false;
         private static bool silent = false;
         public static string file, outDir = string.Empty;
@@ -42,7 +42,6 @@ namespace ConsoleAppZip1
                 Console.WriteLine("Options");
                 Console.WriteLine("  -v\t\tVerbose console ouput.");
                 Console.WriteLine("  -s\t\tSilent. No console output.");
-                Console.WriteLine("  -l\t\tLength of password.");
                 Console.WriteLine("  Default\tSome console output.");
                 return;
             }
@@ -55,8 +54,6 @@ namespace ConsoleAppZip1
                         verboseOutput = true;
                     else if (args[i] == "-s")
                         silent = true;
-                    else if (args[i] == "-l")//Igor - Alterado aqui para começar do 4 length.
-                        currentPWLenght = int.Parse(args[i + 1].Trim());//Igor - Alterado aqui para começar do 4 length.
                     else
                     {
                         Console.WriteLine("Error: unknown option '{0}'", args[i]);
